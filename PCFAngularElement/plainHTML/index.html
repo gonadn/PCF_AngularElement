@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PowerApps Component - Test Page</title>
+  <script src="bundle.js"></script>
+</head>
+
+<body>
+  <h1> PowerApps Component - Lite Server Test Page  </h1>
+  <app-pcf-component></app-pcf-component>
+
+  <script>
+    var button = document.querySelector('app-pcf-component');
+    button.addEventListener('clicked', function (event) {
+      alert(event.detail);
+    });
+  </script>
+</body>
+
+</html>
+
