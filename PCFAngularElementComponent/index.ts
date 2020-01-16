@@ -1,5 +1,5 @@
 import {IInputs, IOutputs} from "./generated/ManifestTypes";
-import './../PCFAngulaElement/dist/PCFAngulaElement/bundle';
+import './../PCFAngularElement/dist/PCFAngularElement/bundle';
 
 export class PCFAngularElementComponent implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 	private _container: HTMLDivElement;
@@ -15,9 +15,7 @@ export class PCFAngularElementComponent implements ComponentFramework.StandardCo
 		this._container = container;
 		this._notifyOutputChanged = notifyOutputChanged;
 
-		//console.log(this._htmlElement)
 		this._htmlElement = document.createElement("app-pcf-component");
-		//this._container.appendChild(this._htmlElement);
 
 		//Associate controls to container
 		container.appendChild(this._htmlElement);	
